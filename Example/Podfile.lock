@@ -1,0 +1,14 @@
+PODS:
+  - Zoetrope (0.1.0)
+
+DEPENDENCIES:
+  - Zoetrope (from `../`)
+
+EXTERNAL SOURCES:
+  Zoetrope:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Zoetrope: 102a0dfa58034f0ca855397f20deff62141b76c3
+
+COCOAPODS: 0.39.0

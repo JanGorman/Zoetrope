@@ -1,0 +1,31 @@
+{
+  "name": "Zoetrope",
+  "version": "0.1.0",
+  "summary": "A short description of Zoetrope.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/Zoetrope",
+  "license": "MIT",
+  "authors": {
+    "Jan Gorman": "gorman.jan@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/Zoetrope.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "Zoetrope": [
+      "Pod/Assets/*.png"
+    ]
+  },
+  "frameworks": [
+    "QuartzCore",
+    "ImageIO",
+    "MobileCoreServices",
+    "CoreGraphics"
+  ]
+}

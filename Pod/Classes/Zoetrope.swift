@@ -1,0 +1,226 @@
+//
+//  Copyright (c) 2015 Jan Gorman. All rights reserved.
+//
+
+import UIKit
+import ImageIO
+import MobileCoreServices
+
+private struct Frame {
+    private let delay: Double
+    private let image: UIImage
+}
+
+private class Zoetrope {
+
+    let posterImage: UIImage?
+    let loopCount: Int
+    let frameCount: Int
+
+    private let framesForIndexes: [Int: Frame]
+
+    init?(data: NSData) {
+        guard let imageSource = CGImageSourceCreateWithData(data, nil),
+                  imageType = CGImageSourceGetType(imageSource)
+            where UTTypeConformsTo(imageType, kUTTypeGIF) else {
+                fatalError("No valid gif data")
+        }
+        loopCount = Zoetrope.loopCountFromImageSource(imageSource)
+        framesForIndexes = Zoetrope.frames(imageSource)
+        frameCount = framesForIndexes.count
+        guard !framesForIndexes.isEmpty else {
+            fatalError("No valid gif data")
+        }
+        posterImage = framesForIndexes[0]?.image
+    }
+
+    func imageAtIndex(index: Int) -> UIImage? {
+        return framesForIndexes[index]?.image
+    }
+
+    func delayAtIndex(index: Int) -> Double? {
+        return framesForIndexes[index]?.delay
+    }
+
+}
+
+private extension Zoetrope {
+    
+    static func loopCountFromImageSource(imageSource: CGImageSource) -> Int {
+        guard let imageProperties: NSDictionary = CGImageSourceCopyProperties(imageSource, nil),
+            gifProperties = imageProperties[kCGImagePropertyGIFDictionary as String] as? NSDictionary,
+            loopCount = gifProperties[kCGImagePropertyGIFLoopCount as String] as? Int else {
+                fatalError("No valid gif data")
+        }
+        return loopCount
+    }
+    
+    static func frames(imageSource: CGImageSource) -> [Int: Frame] {
+        var frames = [Int: Frame]()
+        for i in 0..<CGImageSourceGetCount(imageSource) {
+            if let cgImage = CGImageSourceCreateImageAtIndex(imageSource, i, nil) {
+                let frameImage = UIImage(CGImage: cgImage)
+                if let frameProperties: NSDictionary = CGImageSourceCopyPropertiesAtIndex(imageSource, i, nil),
+                    gifFrameProperties = frameProperties[kCGImagePropertyGIFDictionary as String] as? NSDictionary {
+                        let previous: Double! = i == 0 ? 0.1 : frames[i - 1]?.delay
+                        let delay = Zoetrope.delayTimefromProperties(gifFrameProperties, previousFrameDelay: previous)
+                        frames[i] = Frame(delay: delay, image: frameImage)
+                }
+            }
+        }
+        return frames
+    }
+    
+    static func delayTimefromProperties(properties: NSDictionary, previousFrameDelay: Double) -> Double {
+        var delayTime: Double! = (properties[kCGImagePropertyGIFUnclampedDelayTime as String]
+            ?? properties[kCGImagePropertyGIFDelayTime as String]) as? Double
+        if delayTime == nil {
+            delayTime = previousFrameDelay
+        }
+        if delayTime < (0.02 - DBL_EPSILON) {
+            delayTime = 0.02
+        }
+        return delayTime
+    }
+    
+}
+
+public class ZoetropeImageView: UIImageView {
+    
+    private var currentFrameIndex = 0
+    private var loopCountDown = 0
+    private var accumulator = 0.0
+    private var needsDisplayWhenImageBecomesAvailable = false
+    private var currentFrame: UIImage!
+    
+    public override var image: UIImage? {
+        get {
+            return animatedImage != nil ? currentFrame : super.image
+        }
+        set {
+            super.image = image
+        }
+    }
+
+    private lazy var displayLink: CADisplayLink = { [unowned self] in
+        let displayLink = CADisplayLink(target: self, selector: "displayDidRefresh:")
+        displayLink.addToRunLoop(NSRunLoop.mainRunLoop(), forMode: NSRunLoopCommonModes)
+        return displayLink
+    }()
+
+    private var animatedImage: Zoetrope! {
+        didSet {
+            image = nil
+            highlighted = false
+            invalidateIntrinsicContentSize()
+            
+            currentFrame = animatedImage.posterImage
+            currentFrameIndex = 0
+            loopCountDown = animatedImage.loopCount > 0 ? animatedImage.loopCount : NSIntegerMax
+
+            if shouldAnimate {
+                startAnimating()
+            }
+
+            layer.setNeedsDisplay()
+        }
+    }
+    
+    public var data: NSData! {
+        didSet {
+            animatedImage = Zoetrope(data: data)
+        }
+    }
+
+    private var shouldAnimate: Bool {
+        return animatedImage != nil && superview != nil
+    }
+    
+    public override func didMoveToWindow() {
+        super.didMoveToWindow()
+        if shouldAnimate {
+            startAnimating()
+        } else {
+            stopAnimating()
+        }
+    }
+    
+    public override func didMoveToSuperview() {
+        super.didMoveToSuperview()
+        if shouldAnimate {
+            startAnimating()
+        } else {
+            stopAnimating()
+        }
+    }
+    
+    public override func intrinsicContentSize() -> CGSize {
+        guard let _ = animatedImage, image = image else {
+            return super.intrinsicContentSize()
+        }
+        return image.size
+    }
+    
+    public override func startAnimating() {
+        if animatedImage != nil {
+            displayLink.paused = false
+        } else {
+            super.startAnimating()
+        }
+    }
+    
+    public override func stopAnimating() {
+        if animatedImage != nil {
+            displayLink.paused = true
+        } else {
+            super.stopAnimating()
+        }
+    }
+    
+    public override func isAnimating() -> Bool {
+        guard animatedImage != nil && !displayLink.paused else {
+            return super.isAnimating()
+        }
+        return true
+    }
+    
+    func displayDidRefresh(displayLink: CADisplayLink) {
+        if let image = animatedImage.imageAtIndex(currentFrameIndex),
+               delayTime = animatedImage.delayAtIndex(currentFrameIndex) {
+            currentFrame = image
+            if needsDisplayWhenImageBecomesAvailable {
+                layer.setNeedsDisplay()
+                needsDisplayWhenImageBecomesAvailable = false
+            }
+
+            accumulator += displayLink.duration
+            
+            while accumulator >= delayTime {
+                accumulator -= delayTime
+                ++currentFrameIndex
+                if currentFrameIndex >= animatedImage.frameCount {
+                    --loopCountDown
+                    guard loopCountDown > 0 else {
+                        stopAnimating()
+                        return
+                    }
+                    currentFrameIndex = 0
+                }
+                needsDisplayWhenImageBecomesAvailable = true
+            }
+            
+        }
+    }
+    
+    public override func displayLayer(layer: CALayer) {
+        guard let image = image else {
+            return
+        }
+        layer.contents = image.CGImage
+    }
+    
+    deinit {
+        displayLink.invalidate()
+    }
+
+}
