@@ -58,14 +58,12 @@ private extension Zoetrope {
     static func frames(imageSource: CGImageSource) -> [Int: Frame] {
         var frames = [Int: Frame]()
         for i in 0..<CGImageSourceGetCount(imageSource) {
-            if let cgImage = CGImageSourceCreateImageAtIndex(imageSource, i, nil) {
-                let frameImage = UIImage(CGImage: cgImage)
-                if let frameProperties: NSDictionary = CGImageSourceCopyPropertiesAtIndex(imageSource, i, nil),
-                    gifFrameProperties = frameProperties[kCGImagePropertyGIFDictionary as String] as? NSDictionary {
-                        let previous: Double! = i == 0 ? 0.1 : frames[i - 1]?.delay
-                        let delay = Zoetrope.delayTimefromProperties(gifFrameProperties, previousFrameDelay: previous)
-                        frames[i] = Frame(delay: delay, image: frameImage)
-                }
+            if let cgImage = CGImageSourceCreateImageAtIndex(imageSource, i, nil),
+                frameProperties: NSDictionary = CGImageSourceCopyPropertiesAtIndex(imageSource, i, nil),
+                gifFrameProperties = frameProperties[kCGImagePropertyGIFDictionary as String] as? NSDictionary {
+                    let previous: Double! = i == 0 ? 0.1 : frames[i - 1]?.delay
+                    let delay = Zoetrope.delayTimefromProperties(gifFrameProperties, previousFrameDelay: previous)
+                    frames[i] = Frame(delay: delay, image: UIImage(CGImage: cgImage))
             }
         }
         return frames
