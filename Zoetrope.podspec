@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "Zoetrope"
-  s.version          = "1.0.0"
+  s.version          = "1.0.1"
   s.summary          = "Animated gif image view with support for varying frame lengths written in Swift."
 
 # This description is used to generate tags and improve search results.
