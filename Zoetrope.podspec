@@ -32,6 +32,6 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Pod/Classes/**/*'
 
-  s.public_header_files = 'Pod/Classes/**/*.swift'
+  s.source_files = 'Pod/Classes/**/*.swift'
   s.frameworks = 'ImageIO', 'MobileCoreServices', 'CoreGraphics'
 end
