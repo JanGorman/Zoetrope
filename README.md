@@ -50,7 +50,7 @@ github "JanGorman/Zoetrope"
 
 ## Author
 
-Jan Gorman, gorman.jan@gmail.com
+[@JanGorman](https://twitter.com/JanGorman/)
 
 ## License
 
