@@ -38,6 +38,12 @@ it, simply add the following line to your Podfile:
 pod "Zoetrope"
 ```
 
+And [Carthage](https://github.com/Carthage/Carthage). Add the following to your `Cartfile` and then run `carthage update`:
+
+```ogdl
+github "JanGorman/Zoetrope"
+```
+
 ## Author
 
 Jan Gorman, gorman.jan@gmail.com
