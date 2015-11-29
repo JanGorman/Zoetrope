@@ -14,7 +14,11 @@ class ViewController: UIViewController {
 
         if let path = NSBundle.mainBundle().URLForResource("animated", withExtension: "gif"),
             data = NSData(contentsOfURL: path) {
-            imageView.data = data
+                do {
+                    try imageView.setData(data)
+                } catch let error {
+                    print("Invalid gif \(error)")
+                }
         }
     }
 

@@ -3,6 +3,7 @@
 [![Version](https://img.shields.io/cocoapods/v/Zoetrope.svg?style=flat)](http://cocoapods.org/pods/Zoetrope)
 [![License](https://img.shields.io/cocoapods/l/Zoetrope.svg?style=flat)](http://cocoapods.org/pods/Zoetrope)
 [![Platform](https://img.shields.io/cocoapods/p/Zoetrope.svg?style=flat)](http://cocoapods.org/pods/Zoetrope)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 ## Usage
 

@@ -6,12 +6,16 @@ import UIKit
 import ImageIO
 import MobileCoreServices
 
+public enum ZoetropeError: ErrorType {
+    case InvalidData
+}
+
 private struct Frame {
     private let delay: Double
     private let image: UIImage
 }
 
-private class Zoetrope {
+private struct Zoetrope {
 
     let posterImage: UIImage?
     let loopCount: Int
@@ -19,17 +23,17 @@ private class Zoetrope {
 
     private let framesForIndexes: [Int: Frame]
 
-    init?(data: NSData) {
+    init(data: NSData) throws {
         guard let imageSource = CGImageSourceCreateWithData(data, nil),
                   imageType = CGImageSourceGetType(imageSource)
             where UTTypeConformsTo(imageType, kUTTypeGIF) else {
-                fatalError("No valid gif data")
+                throw ZoetropeError.InvalidData
         }
-        loopCount = Zoetrope.loopCountFromImageSource(imageSource)
+        loopCount = try Zoetrope.loopCountFromImageSource(imageSource)
         framesForIndexes = Zoetrope.frames(imageSource)
         frameCount = framesForIndexes.count
         guard !framesForIndexes.isEmpty else {
-            fatalError("No valid gif data")
+            throw ZoetropeError.InvalidData
         }
         posterImage = framesForIndexes[0]?.image
     }
@@ -46,11 +50,11 @@ private class Zoetrope {
 
 private extension Zoetrope {
     
-    static func loopCountFromImageSource(imageSource: CGImageSource) -> Int {
+    static func loopCountFromImageSource(imageSource: CGImageSource) throws -> Int {
         guard let imageProperties: NSDictionary = CGImageSourceCopyProperties(imageSource, nil),
             gifProperties = imageProperties[kCGImagePropertyGIFDictionary as String] as? NSDictionary,
             loopCount = gifProperties[kCGImagePropertyGIFLoopCount as String] as? Int else {
-                fatalError("No valid gif data")
+                throw ZoetropeError.InvalidData
         }
         return loopCount
     }
@@ -83,6 +87,12 @@ private extension Zoetrope {
     
 }
 
+/**
+    `ZoetropeImageView` is a `UIImageView` subclass for displaying animated gifs.
+ 
+    Use like any other `UIImageView` and call `setData:` to pass in the `NSData`
+    that represents your animated gif.
+*/
 public class ZoetropeImageView: UIImageView {
     
     private var currentFrameIndex = 0
@@ -123,11 +133,15 @@ public class ZoetropeImageView: UIImageView {
             layer.setNeedsDisplay()
         }
     }
-    
-    public var data: NSData! {
-        didSet {
-            animatedImage = Zoetrope(data: data)
-        }
+
+    /**
+        Call setData with the `NSData` representation of your gif after adding it to your view.
+     
+        - Parameter data:   The `NSData` representation of your gif
+        - Throws: `ZoetropeError.InvalidData` if the `data` parameter does not contain valid gif data.
+    */
+    public func setData(data: NSData) throws {
+        animatedImage = try Zoetrope(data: data)
     }
 
     private var shouldAnimate: Bool {
