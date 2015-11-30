@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "Zoetrope"
-  s.version          = "1.1.0"
+  s.version          = "1.1.1"
   s.summary          = "Animated gif image view with support for varying frame lengths written in Swift."
 
   s.description      = <<-DESC
@@ -14,8 +14,9 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/JanGorman/Zoetrope.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/JanGorman'
 
-  s.platform     = :ios, '9.0'
   s.requires_arc = true
+  s.ios.deployment_target = '8.0'
+  s.tvos.deployment_target = '9.0'
 
   s.source_files = 'Pod/Classes/**/*'
 
