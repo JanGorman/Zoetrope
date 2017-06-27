@@ -31,7 +31,7 @@ func viewDidLoad() {
 
 Here's an animated gif of the simulator displaying an animated gif. Talk about self referential.
 
-![image](https://www.dropbox.com/s/ixutl4ehrgszhde/zoetrope.gif?dl=0)
+![image](https://www.dropbox.com/s/ixutl4ehrgszhde/zoetrope.gif?raw=1)
 
 ## Installation
 
