@@ -7,186 +7,124 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08B434B5899E420A6089E030A6FAC0D4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DB9BC11B88D63B256C673DEC5E1DF7 /* CoreGraphics.framework */; };
-		1EEF715AE401B2E340216780765AA74B /* Zoetrope.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7FFD913BC0DCFEC391B0908EDD3A9D59 /* Zoetrope.bundle */; };
-		2D45B01DFAE7BD74B37524A6EA48AB8A /* Pods-Zoetrope_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD912FDF05F0400418FE3C1454D4F00 /* Pods-Zoetrope_Example-dummy.m */; };
-		37BA52ACCCBA21036E7FA54FE88EEC67 /* Zoetrope.swift in Sources */ = {isa = PBXBuildFile; fileRef = E564116B19FD138503C52404544DDBEB /* Zoetrope.swift */; };
-		40D86062C5D9D777C7A17C9FD32AE181 /* Pods-Zoetrope_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB1FB1392509789382BDA9456438F32 /* Pods-Zoetrope_Tests-dummy.m */; };
-		423A0FA6F7D977C5A795C9BD94BB78E6 /* Pods-Zoetrope_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FEEC5486B637D4CEF672AAF8BCC752F /* Pods-Zoetrope_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		644B4DFDFC282CBF5EEB549011060D42 /* Pods-Zoetrope_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67E663E7519E74AC06620D666AE18A01 /* Pods-Zoetrope_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		725CB453CBAC3A95AB0E035E0C00D850 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6FFF24C795EA1D18193DAB41DDC9F5 /* ImageIO.framework */; };
-		B846D647D34F45782FFFDBE3080C925B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E5294576BD1BC9CE982B47126F4260 /* Foundation.framework */; };
-		C1EBBBD037CDB4A162A3E1ECCF11A1E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E5294576BD1BC9CE982B47126F4260 /* Foundation.framework */; };
-		D795DEF0818C2486A8D4D0E28CF511E3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE05200BE493FA733007A709E5AD2B07 /* QuartzCore.framework */; };
-		DF706037F407E393A4F9729A82484F41 /* Zoetrope-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A7AAF3CA033FFD87A14C4F2C731EB2E9 /* Zoetrope-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E2CAE81B49AEA059A4D1C98DA128D34B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3495B48D62610363AE17C4AD780977C7 /* MobileCoreServices.framework */; };
-		F161D2CEE551A341115A4047ED6448A8 /* Zoetrope-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F73F19CB2A389B89781A47E245016998 /* Zoetrope-dummy.m */; };
-		F22229DB613A8FEEDAF974B02EEBCCF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E5294576BD1BC9CE982B47126F4260 /* Foundation.framework */; };
+		3D5DABE00438020E3B451ECE58198069 /* Zoetrope-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C24B352745B9EE320B00FC0FD19FB2 /* Zoetrope-dummy.m */; };
+		4BFE0DCEFCB1E2AF2E4537B864D6C590 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6C6A486079D14F68A24732C770E0A8 /* ImageIO.framework */; };
+		50894944092B7A9FC813850EA88F7FD9 /* Zoetrope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313A15A8A02DACBF7127EFC985F53B4F /* Zoetrope.swift */; };
+		5967061B393B7080EEBC76BBE7DBFB1D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20E59437BD06A4B7DFFAB789F6CA5635 /* CoreGraphics.framework */; };
+		6887D27ABE2AA5B4699E6ACD21BC9866 /* Pods-Zoetrope_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD912FDF05F0400418FE3C1454D4F00 /* Pods-Zoetrope_Example-dummy.m */; };
+		841A18D27D57766226359CFB14AD31A0 /* Pods-Zoetrope_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67E663E7519E74AC06620D666AE18A01 /* Pods-Zoetrope_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90518B474ED4EC0D16209450A8B27E66 /* Pods-Zoetrope_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB1FB1392509789382BDA9456438F32 /* Pods-Zoetrope_Tests-dummy.m */; };
+		944227E295469F29E764F727C24D27A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA72195320FF4E1F6F46BF6D8D6B78D1 /* Foundation.framework */; };
+		94A4F6141C92B87EC4E8FF9EE81B2A3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA72195320FF4E1F6F46BF6D8D6B78D1 /* Foundation.framework */; };
+		A346F861F9B8AC0013CDE75E4BB78DFA /* Zoetrope-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A7C8EB5C7C8FF928B90659038861321 /* Zoetrope-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C090C9C4D548DB5CE1B33E701CE45E9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA72195320FF4E1F6F46BF6D8D6B78D1 /* Foundation.framework */; };
+		DF49AE84DA2559F6E32E229B134F140F /* Pods-Zoetrope_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FEEC5486B637D4CEF672AAF8BCC752F /* Pods-Zoetrope_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F792F4C8837D656405DC45FA6E383813 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1F10B800DDBCD44DD4F96F2E183117 /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		343C847F05FE7AA49F8AFA922BBFCED1 /* PBXContainerItemProxy */ = {
+		A720B7C9A0A671109175D6F442C66F81 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 458A84E4449E324A3B16FF152C04F61D;
-			remoteInfo = "Zoetrope-Zoetrope";
-		};
-		4EE5882D595DE39A6F76346C321D7A5B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9AA23916E160C0F041153F2FDE058DC5;
+			remoteGlobalIDString = FB8C66441D5EAB1760277272747AE263;
 			remoteInfo = Zoetrope;
 		};
-		6B6448E6F6A84869F5F970BB9D3D11EB /* PBXContainerItemProxy */ = {
+		F7F5519C116B3AF3D002710023C9A1F9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9AA23916E160C0F041153F2FDE058DC5;
+			remoteGlobalIDString = FB8C66441D5EAB1760277272747AE263;
 			remoteInfo = Zoetrope;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		090DDE631FFA737896C4C6B8AAF64A4F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		023B7FDCF69CA7378454EDEE2157562D /* Zoetrope.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Zoetrope.framework; path = Zoetrope.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		096C0F1BA4AACF2D97C89BCE65634589 /* Pods-Zoetrope_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Zoetrope_Example.release.xcconfig"; sourceTree = "<group>"; };
-		09E5294576BD1BC9CE982B47126F4260 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		104AC646966E4E42578A8257335AED16 /* Pods-Zoetrope_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Zoetrope_Tests.modulemap"; sourceTree = "<group>"; };
+		104AC646966E4E42578A8257335AED16 /* Pods-Zoetrope_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Zoetrope_Tests.modulemap"; sourceTree = "<group>"; };
 		1FB3B0BCD2A46DF43C50B70B0B8FC7E6 /* Pods-Zoetrope_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Zoetrope_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1FD912FDF05F0400418FE3C1454D4F00 /* Pods-Zoetrope_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Zoetrope_Example-dummy.m"; sourceTree = "<group>"; };
-		2B58C47866878797B9741F4D178E04D9 /* Zoetrope.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Zoetrope.xcconfig; sourceTree = "<group>"; };
+		20E59437BD06A4B7DFFAB789F6CA5635 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		2A7C8EB5C7C8FF928B90659038861321 /* Zoetrope-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Zoetrope-umbrella.h"; sourceTree = "<group>"; };
 		2FCE6B4205F5CDACD2F0BBEFFC390E50 /* Pods-Zoetrope_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Zoetrope_Example-resources.sh"; sourceTree = "<group>"; };
-		31527D69817BD051F15709FE0B52A864 /* Pods_Zoetrope_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zoetrope_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		313A15A8A02DACBF7127EFC985F53B4F /* Zoetrope.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Zoetrope.swift; path = Pod/Classes/Zoetrope.swift; sourceTree = "<group>"; };
 		333FE668785C7CB329B31E0C69EA5209 /* Pods-Zoetrope_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Zoetrope_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		3495B48D62610363AE17C4AD780977C7 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		44088F4B1D764EB94FA9880898FBF5B9 /* Pods-Zoetrope_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Zoetrope_Tests-resources.sh"; sourceTree = "<group>"; };
 		4FEEC5486B637D4CEF672AAF8BCC752F /* Pods-Zoetrope_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Zoetrope_Example-umbrella.h"; sourceTree = "<group>"; };
 		67E663E7519E74AC06620D666AE18A01 /* Pods-Zoetrope_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Zoetrope_Tests-umbrella.h"; sourceTree = "<group>"; };
 		7CB1FB1392509789382BDA9456438F32 /* Pods-Zoetrope_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Zoetrope_Tests-dummy.m"; sourceTree = "<group>"; };
-		7FFD913BC0DCFEC391B0908EDD3A9D59 /* Zoetrope.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Zoetrope.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		8672C90015F49521A93DF9FA8D44DCEA /* Zoetrope.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Zoetrope.modulemap; sourceTree = "<group>"; };
 		8794DB5C654C880DED8C572571328860 /* Pods-Zoetrope_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Zoetrope_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8DA30395B17F0ADED35B39E0AAE99604 /* Pods_Zoetrope_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Zoetrope_Tests.framework; path = "Pods-Zoetrope_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FCFAC9AED2EE7BAC0CFB6405EC3A58A /* Pods-Zoetrope_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Zoetrope_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		90BD82B6E9F85F7886DEFD2FC9E0B1E2 /* Pods_Zoetrope_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zoetrope_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		944227CD1C0C719400A83F87 /* Zoetrope.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Zoetrope.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		944227CF1C0C719400A83F87 /* Zoetrope-tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Zoetrope-tvOS.h"; sourceTree = "<group>"; };
-		944227D11C0C719400A83F87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		958F5D0EC789D04B857776090554222C /* Pods-Zoetrope_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Zoetrope_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		9AD6AEB0CC6E1BA286149990AE706380 /* Zoetrope-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Zoetrope-prefix.pch"; sourceTree = "<group>"; };
-		9C70E952789F639B740AF0FBCB64F13B /* Zoetrope.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Zoetrope.modulemap; sourceTree = "<group>"; };
-		9D6FFF24C795EA1D18193DAB41DDC9F5 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
-		A7AAF3CA033FFD87A14C4F2C731EB2E9 /* Zoetrope-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Zoetrope-umbrella.h"; sourceTree = "<group>"; };
+		A2C24B352745B9EE320B00FC0FD19FB2 /* Zoetrope-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Zoetrope-dummy.m"; sourceTree = "<group>"; };
+		AA4970A349E9B20E5066910B7851093E /* Zoetrope.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Zoetrope.xcconfig; sourceTree = "<group>"; };
 		AADCCDC6BFB469119D22BA1485C59436 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC1F10B800DDBCD44DD4F96F2E183117 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		B30E2B86EDD941DDC103764A1BCF4A15 /* Zoetrope-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Zoetrope-prefix.pch"; sourceTree = "<group>"; };
 		B5E4AB06372A7941D0691A8B922EF50D /* Pods-Zoetrope_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Zoetrope_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BD65E929E7A6D7BDA703D7492EA7E908 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA4B1665D504D3831E388A5D77B4DBF8 /* Pods-Zoetrope_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Zoetrope_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		CA72195320FF4E1F6F46BF6D8D6B78D1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D3FBB11C83CDA509FCD850DAEB669FE1 /* Pods-Zoetrope_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Zoetrope_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E564116B19FD138503C52404544DDBEB /* Zoetrope.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Zoetrope.swift; sourceTree = "<group>"; };
 		E88DF5E811894ACD6CBFBA1861F0F6A2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAFB5E921D98E076AB8792C24218B406 /* Pods-Zoetrope_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Zoetrope_Example-frameworks.sh"; sourceTree = "<group>"; };
-		EE05200BE493FA733007A709E5AD2B07 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		F2DB9BC11B88D63B256C673DEC5E1DF7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		F64E87B709AE3912E2A152C854924C15 /* Zoetrope.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Zoetrope.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F73F19CB2A389B89781A47E245016998 /* Zoetrope-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Zoetrope-dummy.m"; sourceTree = "<group>"; };
-		FD91397F0B50EBE850950BD1992C70AC /* Pods-Zoetrope_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Zoetrope_Example.modulemap"; sourceTree = "<group>"; };
+		EC98E488EA04DBB5AF14041F46465760 /* Pods_Zoetrope_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Zoetrope_Example.framework; path = "Pods-Zoetrope_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD91397F0B50EBE850950BD1992C70AC /* Pods-Zoetrope_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Zoetrope_Example.modulemap"; sourceTree = "<group>"; };
+		FE6C6A486079D14F68A24732C770E0A8 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		230DF9E585CAFEFA70B4BE3F8B4264E7 /* Frameworks */ = {
+		07C11D2DBA55CA830C11963AC07BD568 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B846D647D34F45782FFFDBE3080C925B /* Foundation.framework in Frameworks */,
+				94A4F6141C92B87EC4E8FF9EE81B2A3D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6624DE7A3FFD90022C3573ADCF62D881 /* Frameworks */ = {
+		627530C9B2D54C634DBFE0D12AA0F59C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08B434B5899E420A6089E030A6FAC0D4 /* CoreGraphics.framework in Frameworks */,
-				F22229DB613A8FEEDAF974B02EEBCCF7 /* Foundation.framework in Frameworks */,
-				725CB453CBAC3A95AB0E035E0C00D850 /* ImageIO.framework in Frameworks */,
-				E2CAE81B49AEA059A4D1C98DA128D34B /* MobileCoreServices.framework in Frameworks */,
-				D795DEF0818C2486A8D4D0E28CF511E3 /* QuartzCore.framework in Frameworks */,
+				944227E295469F29E764F727C24D27A8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6D2FD3B903EA01787C58C5FEC3A43185 /* Frameworks */ = {
+		CAA2CAE4B74B4535493BD6F3F8FB5D08 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		944227C91C0C719400A83F87 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F6418FE3D104F57ACC0F6B1167F79FF7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C1EBBBD037CDB4A162A3E1ECCF11A1E5 /* Foundation.framework in Frameworks */,
+				5967061B393B7080EEBC76BBE7DBFB1D /* CoreGraphics.framework in Frameworks */,
+				C090C9C4D548DB5CE1B33E701CE45E9E /* Foundation.framework in Frameworks */,
+				4BFE0DCEFCB1E2AF2E4537B864D6C590 /* ImageIO.framework in Frameworks */,
+				F792F4C8837D656405DC45FA6E383813 /* MobileCoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		08B2F4BB40D1F98EBDB3E957E9414328 /* Zoetrope */ = {
+		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				291F5229D656CB6BE8DDBADE8313A394 /* Pod */,
-				38FE60C8659EE3D5767C0B01A19F766A /* Support Files */,
-			);
-			name = Zoetrope;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		20B56609144CE204DFA8221F742B2D76 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				8A0D2E4458CB87D128AC420E9C9A5AE1 /* iOS */,
+				3962BD3FE913C8642349A15F20A59481 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		291F5229D656CB6BE8DDBADE8313A394 /* Pod */ = {
+		3962BD3FE913C8642349A15F20A59481 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				E7D4AA1D8C0087051E3170CA9D437572 /* Classes */,
+				20E59437BD06A4B7DFFAB789F6CA5635 /* CoreGraphics.framework */,
+				CA72195320FF4E1F6F46BF6D8D6B78D1 /* Foundation.framework */,
+				FE6C6A486079D14F68A24732C770E0A8 /* ImageIO.framework */,
+				AC1F10B800DDBCD44DD4F96F2E183117 /* MobileCoreServices.framework */,
 			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-		2DFE805476303F5B9DB8EB641856385D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				90BD82B6E9F85F7886DEFD2FC9E0B1E2 /* Pods_Zoetrope_Example.framework */,
-				31527D69817BD051F15709FE0B52A864 /* Pods_Zoetrope_Tests.framework */,
-				7FFD913BC0DCFEC391B0908EDD3A9D59 /* Zoetrope.bundle */,
-				F64E87B709AE3912E2A152C854924C15 /* Zoetrope.framework */,
-				944227CD1C0C719400A83F87 /* Zoetrope.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		38FE60C8659EE3D5767C0B01A19F766A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				090DDE631FFA737896C4C6B8AAF64A4F /* Info.plist */,
-				9C70E952789F639B740AF0FBCB64F13B /* Zoetrope.modulemap */,
-				2B58C47866878797B9741F4D178E04D9 /* Zoetrope.xcconfig */,
-				F73F19CB2A389B89781A47E245016998 /* Zoetrope-dummy.m */,
-				9AD6AEB0CC6E1BA286149990AE706380 /* Zoetrope-prefix.pch */,
-				A7AAF3CA033FFD87A14C4F2C731EB2E9 /* Zoetrope-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Zoetrope";
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		5ABB073F5565CB41DA3DBDF2AD493E33 /* Pods-Zoetrope_Tests */ = {
@@ -210,25 +148,12 @@
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
-				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				B161840CA95C0515BF64CFEF4EC21767 /* Development Pods */,
-				944227CE1C0C719400A83F87 /* Zoetrope-tvOS */,
-				20B56609144CE204DFA8221F742B2D76 /* Frameworks */,
-				2DFE805476303F5B9DB8EB641856385D /* Products */,
+				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
+				8F2265176DB4EE400596B949357E84BF /* Products */,
 				8E526333E15D2F27A57B458724BA5387 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		8A0D2E4458CB87D128AC420E9C9A5AE1 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				F2DB9BC11B88D63B256C673DEC5E1DF7 /* CoreGraphics.framework */,
-				09E5294576BD1BC9CE982B47126F4260 /* Foundation.framework */,
-				9D6FFF24C795EA1D18193DAB41DDC9F5 /* ImageIO.framework */,
-				3495B48D62610363AE17C4AD780977C7 /* MobileCoreServices.framework */,
-				EE05200BE493FA733007A709E5AD2B07 /* QuartzCore.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		8E526333E15D2F27A57B458724BA5387 /* Targets Support Files */ = {
@@ -240,29 +165,46 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		944227CE1C0C719400A83F87 /* Zoetrope-tvOS */ = {
+		8F2265176DB4EE400596B949357E84BF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				944227CF1C0C719400A83F87 /* Zoetrope-tvOS.h */,
-				944227D11C0C719400A83F87 /* Info.plist */,
+				EC98E488EA04DBB5AF14041F46465760 /* Pods_Zoetrope_Example.framework */,
+				8DA30395B17F0ADED35B39E0AAE99604 /* Pods_Zoetrope_Tests.framework */,
+				023B7FDCF69CA7378454EDEE2157562D /* Zoetrope.framework */,
 			);
-			path = "Zoetrope-tvOS";
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A085DC155FEB73D30FABF9FC86A3F777 /* Zoetrope */ = {
+			isa = PBXGroup;
+			children = (
+				313A15A8A02DACBF7127EFC985F53B4F /* Zoetrope.swift */,
+				B5BFA39319F5EDB750F301EE5FAA7658 /* Support Files */,
+			);
+			name = Zoetrope;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		B161840CA95C0515BF64CFEF4EC21767 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				08B2F4BB40D1F98EBDB3E957E9414328 /* Zoetrope */,
+				A085DC155FEB73D30FABF9FC86A3F777 /* Zoetrope */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		E7D4AA1D8C0087051E3170CA9D437572 /* Classes */ = {
+		B5BFA39319F5EDB750F301EE5FAA7658 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E564116B19FD138503C52404544DDBEB /* Zoetrope.swift */,
+				BD65E929E7A6D7BDA703D7492EA7E908 /* Info.plist */,
+				8672C90015F49521A93DF9FA8D44DCEA /* Zoetrope.modulemap */,
+				AA4970A349E9B20E5066910B7851093E /* Zoetrope.xcconfig */,
+				A2C24B352745B9EE320B00FC0FD19FB2 /* Zoetrope-dummy.m */,
+				B30E2B86EDD941DDC103764A1BCF4A15 /* Zoetrope-prefix.pch */,
+				2A7C8EB5C7C8FF928B90659038861321 /* Zoetrope-umbrella.h */,
 			);
-			path = Classes;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Zoetrope";
 			sourceTree = "<group>";
 		};
 		EDD7A78A1E378ABB2C37D7A011D153E0 /* Pods-Zoetrope_Example */ = {
@@ -286,128 +228,84 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2E2A596F972B2EE3B8F17B2EB66C39CB /* Headers */ = {
+		26E59CB607991B1ECBCC4A071EF452E4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				644B4DFDFC282CBF5EEB549011060D42 /* Pods-Zoetrope_Tests-umbrella.h in Headers */,
+				A346F861F9B8AC0013CDE75E4BB78DFA /* Zoetrope-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3E2660623ED70D03F0FBE47812BD5D14 /* Headers */ = {
+		7EE5C21CAA781D070B841ABD781D1A10 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF706037F407E393A4F9729A82484F41 /* Zoetrope-umbrella.h in Headers */,
+				841A18D27D57766226359CFB14AD31A0 /* Pods-Zoetrope_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		48EE433C9731C0B385822F17CF51B91D /* Headers */ = {
+		CF871B7F9A51CD4D892CF84CB1E9409F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				423A0FA6F7D977C5A795C9BD94BB78E6 /* Pods-Zoetrope_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		944227CA1C0C719400A83F87 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				DF49AE84DA2559F6E32E229B134F140F /* Pods-Zoetrope_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		458A84E4449E324A3B16FF152C04F61D /* Zoetrope-Zoetrope */ = {
+		146C5AB5DFB0813FD56C26008AE02805 /* Pods-Zoetrope_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0E3CE86CFCB7F956A76B01A000DC87C6 /* Build configuration list for PBXNativeTarget "Zoetrope-Zoetrope" */;
+			buildConfigurationList = E55EB483463E251D2D5B2D229D7676E7 /* Build configuration list for PBXNativeTarget "Pods-Zoetrope_Example" */;
 			buildPhases = (
-				FF8C212C6EB5CDD6321CE13747AAAE4C /* Sources */,
-				6D2FD3B903EA01787C58C5FEC3A43185 /* Frameworks */,
-				19B7DDF2276FC5004A7A7FA973BD587B /* Resources */,
+				D8B47317B8EE497C8D40F3B2364D81A7 /* Sources */,
+				07C11D2DBA55CA830C11963AC07BD568 /* Frameworks */,
+				CF871B7F9A51CD4D892CF84CB1E9409F /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = "Zoetrope-Zoetrope";
-			productName = "Zoetrope-Zoetrope";
-			productReference = 7FFD913BC0DCFEC391B0908EDD3A9D59 /* Zoetrope.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
-		944227CC1C0C719400A83F87 /* Zoetrope-tvOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 944227D21C0C719400A83F87 /* Build configuration list for PBXNativeTarget "Zoetrope-tvOS" */;
-			buildPhases = (
-				944227C81C0C719400A83F87 /* Sources */,
-				944227C91C0C719400A83F87 /* Frameworks */,
-				944227CA1C0C719400A83F87 /* Headers */,
-				944227CB1C0C719400A83F87 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Zoetrope-tvOS";
-			productName = "Zoetrope-tvOS";
-			productReference = 944227CD1C0C719400A83F87 /* Zoetrope.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		989D299A3935FEBACB0DF887EDACABCC /* Pods-Zoetrope_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1DF3688922899141B228B06C21700E7D /* Build configuration list for PBXNativeTarget "Pods-Zoetrope_Tests" */;
-			buildPhases = (
-				FD07E76A99531B72076A790B1B16B098 /* Sources */,
-				230DF9E585CAFEFA70B4BE3F8B4264E7 /* Frameworks */,
-				2E2A596F972B2EE3B8F17B2EB66C39CB /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				67782CF5A91CF911E9E87E0D626DBB1D /* PBXTargetDependency */,
-			);
-			name = "Pods-Zoetrope_Tests";
-			productName = "Pods-Zoetrope_Tests";
-			productReference = 31527D69817BD051F15709FE0B52A864 /* Pods_Zoetrope_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		9AA23916E160C0F041153F2FDE058DC5 /* Zoetrope */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 21D17C1F413F5DEAD95F8627963450BE /* Build configuration list for PBXNativeTarget "Zoetrope" */;
-			buildPhases = (
-				68A964A044288D05C016FC5D90D00E82 /* Sources */,
-				6624DE7A3FFD90022C3573ADCF62D881 /* Frameworks */,
-				07146891B8C7420F51AB915E242CF42A /* Resources */,
-				3E2660623ED70D03F0FBE47812BD5D14 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B58F39E92B92B17A9AD326AC1536D531 /* PBXTargetDependency */,
-			);
-			name = Zoetrope;
-			productName = Zoetrope;
-			productReference = F64E87B709AE3912E2A152C854924C15 /* Zoetrope.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		CF88965845BFD5B837008F7CCDACF62D /* Pods-Zoetrope_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A67A8F07A798243022A562790B969FD3 /* Build configuration list for PBXNativeTarget "Pods-Zoetrope_Example" */;
-			buildPhases = (
-				E2F05E584C5D38758FDD85022A21CF7D /* Sources */,
-				F6418FE3D104F57ACC0F6B1167F79FF7 /* Frameworks */,
-				48EE433C9731C0B385822F17CF51B91D /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FE700DB376AC2CB178982F2B7C2B5130 /* PBXTargetDependency */,
+				16909B018E99C5D7F0DC9E0A9AA5D52E /* PBXTargetDependency */,
 			);
 			name = "Pods-Zoetrope_Example";
 			productName = "Pods-Zoetrope_Example";
-			productReference = 90BD82B6E9F85F7886DEFD2FC9E0B1E2 /* Pods_Zoetrope_Example.framework */;
+			productReference = EC98E488EA04DBB5AF14041F46465760 /* Pods_Zoetrope_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9B0AC7A3BFA47CBB244BD049A472F354 /* Pods-Zoetrope_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 269B91B0DF2BFC18EF31D80C6D171B24 /* Build configuration list for PBXNativeTarget "Pods-Zoetrope_Tests" */;
+			buildPhases = (
+				C7EF51B6B875F9BD80C502E8412F23D7 /* Sources */,
+				627530C9B2D54C634DBFE0D12AA0F59C /* Frameworks */,
+				7EE5C21CAA781D070B841ABD781D1A10 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE1EC803FF235AEAABCE417B8238DB67 /* PBXTargetDependency */,
+			);
+			name = "Pods-Zoetrope_Tests";
+			productName = "Pods-Zoetrope_Tests";
+			productReference = 8DA30395B17F0ADED35B39E0AAE99604 /* Pods_Zoetrope_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FB8C66441D5EAB1760277272747AE263 /* Zoetrope */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25D583C358C51F9C1F2A472E9C45005E /* Build configuration list for PBXNativeTarget "Zoetrope" */;
+			buildPhases = (
+				FAFFE77CFD7FA8AA0E62E3F7E04F7AB5 /* Sources */,
+				CAA2CAE4B74B4535493BD6F3F8FB5D08 /* Frameworks */,
+				26E59CB607991B1ECBCC4A071EF452E4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Zoetrope;
+			productName = Zoetrope;
+			productReference = 023B7FDCF69CA7378454EDEE2157562D /* Zoetrope.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -416,13 +314,8 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
-				TargetAttributes = {
-					944227CC1C0C719400A83F87 = {
-						CreatedOnToolsVersion = 7.1.1;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -432,153 +325,116 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 2DFE805476303F5B9DB8EB641856385D /* Products */;
+			productRefGroup = 8F2265176DB4EE400596B949357E84BF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CF88965845BFD5B837008F7CCDACF62D /* Pods-Zoetrope_Example */,
-				989D299A3935FEBACB0DF887EDACABCC /* Pods-Zoetrope_Tests */,
-				9AA23916E160C0F041153F2FDE058DC5 /* Zoetrope */,
-				458A84E4449E324A3B16FF152C04F61D /* Zoetrope-Zoetrope */,
-				944227CC1C0C719400A83F87 /* Zoetrope-tvOS */,
+				146C5AB5DFB0813FD56C26008AE02805 /* Pods-Zoetrope_Example */,
+				9B0AC7A3BFA47CBB244BD049A472F354 /* Pods-Zoetrope_Tests */,
+				FB8C66441D5EAB1760277272747AE263 /* Zoetrope */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		07146891B8C7420F51AB915E242CF42A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1EEF715AE401B2E340216780765AA74B /* Zoetrope.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		19B7DDF2276FC5004A7A7FA973BD587B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		944227CB1C0C719400A83F87 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		68A964A044288D05C016FC5D90D00E82 /* Sources */ = {
+		C7EF51B6B875F9BD80C502E8412F23D7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F161D2CEE551A341115A4047ED6448A8 /* Zoetrope-dummy.m in Sources */,
-				37BA52ACCCBA21036E7FA54FE88EEC67 /* Zoetrope.swift in Sources */,
+				90518B474ED4EC0D16209450A8B27E66 /* Pods-Zoetrope_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		944227C81C0C719400A83F87 /* Sources */ = {
+		D8B47317B8EE497C8D40F3B2364D81A7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6887D27ABE2AA5B4699E6ACD21BC9866 /* Pods-Zoetrope_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E2F05E584C5D38758FDD85022A21CF7D /* Sources */ = {
+		FAFFE77CFD7FA8AA0E62E3F7E04F7AB5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D45B01DFAE7BD74B37524A6EA48AB8A /* Pods-Zoetrope_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FD07E76A99531B72076A790B1B16B098 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				40D86062C5D9D777C7A17C9FD32AE181 /* Pods-Zoetrope_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FF8C212C6EB5CDD6321CE13747AAAE4C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				3D5DABE00438020E3B451ECE58198069 /* Zoetrope-dummy.m in Sources */,
+				50894944092B7A9FC813850EA88F7FD9 /* Zoetrope.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		67782CF5A91CF911E9E87E0D626DBB1D /* PBXTargetDependency */ = {
+		16909B018E99C5D7F0DC9E0A9AA5D52E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Zoetrope;
-			target = 9AA23916E160C0F041153F2FDE058DC5 /* Zoetrope */;
-			targetProxy = 4EE5882D595DE39A6F76346C321D7A5B /* PBXContainerItemProxy */;
+			target = FB8C66441D5EAB1760277272747AE263 /* Zoetrope */;
+			targetProxy = F7F5519C116B3AF3D002710023C9A1F9 /* PBXContainerItemProxy */;
 		};
-		B58F39E92B92B17A9AD326AC1536D531 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Zoetrope-Zoetrope";
-			target = 458A84E4449E324A3B16FF152C04F61D /* Zoetrope-Zoetrope */;
-			targetProxy = 343C847F05FE7AA49F8AFA922BBFCED1 /* PBXContainerItemProxy */;
-		};
-		FE700DB376AC2CB178982F2B7C2B5130 /* PBXTargetDependency */ = {
+		BE1EC803FF235AEAABCE417B8238DB67 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Zoetrope;
-			target = 9AA23916E160C0F041153F2FDE058DC5 /* Zoetrope */;
-			targetProxy = 6B6448E6F6A84869F5F970BB9D3D11EB /* PBXContainerItemProxy */;
+			target = FB8C66441D5EAB1760277272747AE263 /* Zoetrope */;
+			targetProxy = A720B7C9A0A671109175D6F442C66F81 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+		2BB5D0FD264A2B90857FC2C6072F5425 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FB3B0BCD2A46DF43C50B70B0B8FC7E6 /* Pods-Zoetrope_Example.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		21763A408B5F1837C6A63DE7A11CE701 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B5E4AB06372A7941D0691A8B922EF50D /* Pods-Zoetrope_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Zoetrope_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Zoetrope_Example/Pods-Zoetrope_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Zoetrope_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3CBEF633621A5A8A7C885C4B796C59CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5E4AB06372A7941D0691A8B922EF50D /* Pods-Zoetrope_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-Zoetrope_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
@@ -589,40 +445,35 @@
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.schnaub.Zoetrope.Pods-Zoetrope-Tests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_Zoetrope_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		2DADF6A94DC763F6B92D2C812AA064FA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B58C47866878797B9741F4D178E04D9 /* Zoetrope.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = Zoetrope;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		53C279AA44BBB23E6B1DF4609C492B1D /* Release */ = {
+		7150890D4FC61DA3E7DD5C915A977919 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 096C0F1BA4AACF2D97C89BCE65634589 /* Pods-Zoetrope_Example.release.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-Zoetrope_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
@@ -633,20 +484,24 @@
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.schnaub.Zoetrope.Pods-Zoetrope-Example";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_Zoetrope_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+		717E77604BFBB04BEAF56608A1CB2EDE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -654,17 +509,137 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		99C58788C7D4F966CC8564CAF2E3A95E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA4970A349E9B20E5066910B7851093E /* Zoetrope.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Zoetrope/Zoetrope-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Zoetrope/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Zoetrope/Zoetrope.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Zoetrope;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A4C023179566EC91B1E9854B2DD02674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA4970A349E9B20E5066910B7851093E /* Zoetrope.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Zoetrope/Zoetrope-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Zoetrope/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Zoetrope/Zoetrope.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Zoetrope;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A6A03C9B1314C05BD3C2FBD3F65EDF83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
@@ -677,79 +652,29 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		6E132F7AE552A85E6D040184457C3E33 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B58C47866878797B9741F4D178E04D9 /* Zoetrope.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Zoetrope/Zoetrope-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Zoetrope/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Zoetrope/Zoetrope.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.schnaub.Zoetrope;
-				PRODUCT_NAME = Zoetrope;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8B170B3129529F90B11B07FD2EB90FD8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B58C47866878797B9741F4D178E04D9 /* Zoetrope.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Zoetrope/Zoetrope-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Zoetrope/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Zoetrope/Zoetrope.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.schnaub.Zoetrope;
-				PRODUCT_NAME = Zoetrope;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8E7A5307F0C69726B623376B5CDD26B8 /* Release */ = {
+		BD6FF5227721BD710180736814B06890 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 958F5D0EC789D04B857776090554222C /* Pods-Zoetrope_Tests.release.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-Zoetrope_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
@@ -760,149 +685,35 @@
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.schnaub.Zoetrope.Pods-Zoetrope-Tests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_Zoetrope_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		944227D31C0C719400A83F87 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = "Zoetrope-tvOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.schnaub.Zoetrope-tvOS";
-				PRODUCT_NAME = Zoetrope;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		944227D41C0C719400A83F87 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = "Zoetrope-tvOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.schnaub.Zoetrope-tvOS";
-				PRODUCT_NAME = Zoetrope;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B1F1D91704D45C5291C201C4E93AB677 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1FB3B0BCD2A46DF43C50B70B0B8FC7E6 /* Pods-Zoetrope_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Zoetrope_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Zoetrope_Example/Pods-Zoetrope_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.schnaub.Zoetrope.Pods-Zoetrope-Example";
-				PRODUCT_NAME = Pods_Zoetrope_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		EC27DD985CF9734E86A8E7C787C5AC1A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B58C47866878797B9741F4D178E04D9 /* Zoetrope.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = Zoetrope;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0E3CE86CFCB7F956A76B01A000DC87C6 /* Build configuration list for PBXNativeTarget "Zoetrope-Zoetrope" */ = {
+		25D583C358C51F9C1F2A472E9C45005E /* Build configuration list for PBXNativeTarget "Zoetrope" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EC27DD985CF9734E86A8E7C787C5AC1A /* Debug */,
-				2DADF6A94DC763F6B92D2C812AA064FA /* Release */,
+				99C58788C7D4F966CC8564CAF2E3A95E /* Debug */,
+				A4C023179566EC91B1E9854B2DD02674 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1DF3688922899141B228B06C21700E7D /* Build configuration list for PBXNativeTarget "Pods-Zoetrope_Tests" */ = {
+		269B91B0DF2BFC18EF31D80C6D171B24 /* Build configuration list for PBXNativeTarget "Pods-Zoetrope_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				21763A408B5F1837C6A63DE7A11CE701 /* Debug */,
-				8E7A5307F0C69726B623376B5CDD26B8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		21D17C1F413F5DEAD95F8627963450BE /* Build configuration list for PBXNativeTarget "Zoetrope" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8B170B3129529F90B11B07FD2EB90FD8 /* Debug */,
-				6E132F7AE552A85E6D040184457C3E33 /* Release */,
+				3CBEF633621A5A8A7C885C4B796C59CF /* Debug */,
+				BD6FF5227721BD710180736814B06890 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -910,25 +721,17 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
-				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+				A6A03C9B1314C05BD3C2FBD3F65EDF83 /* Debug */,
+				717E77604BFBB04BEAF56608A1CB2EDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		944227D21C0C719400A83F87 /* Build configuration list for PBXNativeTarget "Zoetrope-tvOS" */ = {
+		E55EB483463E251D2D5B2D229D7676E7 /* Build configuration list for PBXNativeTarget "Pods-Zoetrope_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				944227D31C0C719400A83F87 /* Debug */,
-				944227D41C0C719400A83F87 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		A67A8F07A798243022A562790B969FD3 /* Build configuration list for PBXNativeTarget "Pods-Zoetrope_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B1F1D91704D45C5291C201C4E93AB677 /* Debug */,
-				53C279AA44BBB23E6B1DF4609C492B1D /* Release */,
+				2BB5D0FD264A2B90857FC2C6072F5425 /* Debug */,
+				7150890D4FC61DA3E7DD5C915A977919 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

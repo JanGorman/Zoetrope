@@ -7,20 +7,20 @@ import Zoetrope
 
 class ViewController: UIViewController {
 
-    @IBOutlet var imageView: ZoetropeImageView!
+  @IBOutlet var imageView: ZoetropeImageView!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+  override func viewDidLoad() {
+    super.viewDidLoad()
 
-        if let path = NSBundle.mainBundle().URLForResource("animated", withExtension: "gif"),
-            data = NSData(contentsOfURL: path) {
-                do {
-                    try imageView.setData(data)
-                } catch let error {
-                    print("Invalid gif \(error)")
-                }
-        }
+    if let path = Bundle.main.url(forResource: "animated", withExtension: "gif"),
+      let data = try? Data(contentsOf: path) {
+      do {
+        try imageView.setData(data)
+      } catch let error {
+        print("Invalid gif \(error)")
+      }
     }
+  }
 
 }
 

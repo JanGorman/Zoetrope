@@ -5,6 +5,12 @@
 [![Platform](https://img.shields.io/cocoapods/p/Zoetrope.svg?style=flat)](http://cocoapods.org/pods/Zoetrope)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
+## Requirements
+
+- Swift 3.1
+- iOS 8.0+
+- Xcode 8+
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.

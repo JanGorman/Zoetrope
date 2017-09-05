@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0DA529C1048489B0C935171F /* Pods_Zoetrope_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CEFF32BC1C00E295F53456 /* Pods_Zoetrope_Tests.framework */; };
-		3F2EB0E377A6C1DAE2A6709C /* Pods_Zoetrope_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76540CA4B08387C3F1F1505D /* Pods_Zoetrope_Example.framework */; };
+		19063641404B1D68C8E3C887 /* Pods_Zoetrope_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DD18CC50423E3B90B40766E /* Pods_Zoetrope_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		C2AE0BA1616DD6E49ECA05F4 /* Pods_Zoetrope_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 528723BC32538678606083CD /* Pods_Zoetrope_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3E81056E839EA483573AD801 /* Pods-Zoetrope_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zoetrope_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Zoetrope_Tests/Pods-Zoetrope_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		528723BC32538678606083CD /* Pods_Zoetrope_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zoetrope_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B0AE89FC449290C06A5908C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Zoetrope_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zoetrope_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,13 +40,13 @@
 		607FACE51AFB9204008FA782 /* Zoetrope_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Zoetrope_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		70EAEB49367D922DBD74EFD4 /* Pods-Zoetrope_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zoetrope_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zoetrope_Tests/Pods-Zoetrope_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		76540CA4B08387C3F1F1505D /* Pods_Zoetrope_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zoetrope_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		79CEFF32BC1C00E295F53456 /* Pods_Zoetrope_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zoetrope_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		805843478A94E60D20BFBA6E /* Zoetrope.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Zoetrope.podspec; path = ../Zoetrope.podspec; sourceTree = "<group>"; };
-		CE77696728ADAA103793514E /* Pods-Zoetrope_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zoetrope_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zoetrope_Example/Pods-Zoetrope_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		D9EEEF9353B889E593F8D17D /* Pods-Zoetrope_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zoetrope_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Zoetrope_Example/Pods-Zoetrope_Example.release.xcconfig"; sourceTree = "<group>"; };
+		8DD18CC50423E3B90B40766E /* Pods_Zoetrope_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zoetrope_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC7020225801225060084D55 /* Pods-Zoetrope_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zoetrope_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Zoetrope_Tests/Pods-Zoetrope_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		BF5DBBD498B3AD67EAC6910A /* Pods-Zoetrope_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zoetrope_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zoetrope_Example/Pods-Zoetrope_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		C3A80952F97F49BDA079523D /* Pods-Zoetrope_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zoetrope_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Zoetrope_Example/Pods-Zoetrope_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E197A0E1215BC611828F52F8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		EFE33910C23FD122D2F1CD1F /* Pods-Zoetrope_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zoetrope_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zoetrope_Tests/Pods-Zoetrope_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F2EB0E377A6C1DAE2A6709C /* Pods_Zoetrope_Example.framework in Frameworks */,
+				C2AE0BA1616DD6E49ECA05F4 /* Pods_Zoetrope_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,20 +62,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DA529C1048489B0C935171F /* Pods_Zoetrope_Tests.framework in Frameworks */,
+				19063641404B1D68C8E3C887 /* Pods_Zoetrope_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2FFF38B1D388498651DAC2CC /* Frameworks */ = {
+		11DDBFE416B3D2286EF4E2A2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				76540CA4B08387C3F1F1505D /* Pods_Zoetrope_Example.framework */,
-				79CEFF32BC1C00E295F53456 /* Pods_Zoetrope_Tests.framework */,
+				BF5DBBD498B3AD67EAC6910A /* Pods-Zoetrope_Example.debug.xcconfig */,
+				C3A80952F97F49BDA079523D /* Pods-Zoetrope_Example.release.xcconfig */,
+				EFE33910C23FD122D2F1CD1F /* Pods-Zoetrope_Tests.debug.xcconfig */,
+				BC7020225801225060084D55 /* Pods-Zoetrope_Tests.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		607FACC71AFB9204008FA782 = {
@@ -85,8 +87,8 @@
 				607FACD21AFB9204008FA782 /* Example for Zoetrope */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
-				87606D335312BA7E4A173556 /* Pods */,
-				2FFF38B1D388498651DAC2CC /* Frameworks */,
+				11DDBFE416B3D2286EF4E2A2 /* Pods */,
+				87E80E6A0609EC9B8789754E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,15 +150,13 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		87606D335312BA7E4A173556 /* Pods */ = {
+		87E80E6A0609EC9B8789754E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CE77696728ADAA103793514E /* Pods-Zoetrope_Example.debug.xcconfig */,
-				D9EEEF9353B889E593F8D17D /* Pods-Zoetrope_Example.release.xcconfig */,
-				70EAEB49367D922DBD74EFD4 /* Pods-Zoetrope_Tests.debug.xcconfig */,
-				3E81056E839EA483573AD801 /* Pods-Zoetrope_Tests.release.xcconfig */,
+				528723BC32538678606083CD /* Pods_Zoetrope_Example.framework */,
+				8DD18CC50423E3B90B40766E /* Pods_Zoetrope_Tests.framework */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,12 +166,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Zoetrope_Example" */;
 			buildPhases = (
-				AB211A15399CBE311D646095 /* Check Pods Manifest.lock */,
+				627EA23EDE7502915E7EFA3C /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				ECD03D5EA4530E816DD56226 /* Embed Pods Frameworks */,
-				D0A83F4FFDE050F63E262BA5 /* Copy Pods Resources */,
+				2320D85085B0A1BED5975322 /* [CP] Embed Pods Frameworks */,
+				7682FC02D94A81B553458C0C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -186,12 +186,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Zoetrope_Tests" */;
 			buildPhases = (
-				0E9AF93E15EAF946BDD4B915 /* Check Pods Manifest.lock */,
+				2B92812E76F7AEA8BF833D91 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				62A157A550FD873E4465D80F /* Embed Pods Frameworks */,
-				09681EC8D590F3D50741732F /* Copy Pods Resources */,
+				17550956AFD258BC5A4F6DE7 /* [CP] Embed Pods Frameworks */,
+				2F51DA7B82B668A30B2EB587 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -215,9 +215,11 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						LastSwiftMigration = 0830;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						LastSwiftMigration = 0830;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -262,14 +264,68 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		09681EC8D590F3D50741732F /* Copy Pods Resources */ = {
+		17550956AFD258BC5A4F6DE7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Zoetrope_Tests/Pods-Zoetrope_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Zoetrope/Zoetrope.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Zoetrope.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Zoetrope_Tests/Pods-Zoetrope_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2320D85085B0A1BED5975322 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Zoetrope_Example/Pods-Zoetrope_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Zoetrope/Zoetrope.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Zoetrope.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Zoetrope_Example/Pods-Zoetrope_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B92812E76F7AEA8BF833D91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Zoetrope_Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F51DA7B82B668A30B2EB587 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,79 +333,37 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Zoetrope_Tests/Pods-Zoetrope_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		0E9AF93E15EAF946BDD4B915 /* Check Pods Manifest.lock */ = {
+		627EA23EDE7502915E7EFA3C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Zoetrope_Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		62A157A550FD873E4465D80F /* Embed Pods Frameworks */ = {
+		7682FC02D94A81B553458C0C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Zoetrope_Tests/Pods-Zoetrope_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AB211A15399CBE311D646095 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		D0A83F4FFDE050F63E262BA5 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Zoetrope_Example/Pods-Zoetrope_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		ECD03D5EA4530E816DD56226 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Zoetrope_Example/Pods-Zoetrope_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -486,7 +500,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE77696728ADAA103793514E /* Pods-Zoetrope_Example.debug.xcconfig */;
+			baseConfigurationReference = BF5DBBD498B3AD67EAC6910A /* Pods-Zoetrope_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Zoetrope/Info.plist;
@@ -494,12 +508,13 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D9EEEF9353B889E593F8D17D /* Pods-Zoetrope_Example.release.xcconfig */;
+			baseConfigurationReference = C3A80952F97F49BDA079523D /* Pods-Zoetrope_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Zoetrope/Info.plist;
@@ -507,12 +522,13 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 70EAEB49367D922DBD74EFD4 /* Pods-Zoetrope_Tests.debug.xcconfig */;
+			baseConfigurationReference = EFE33910C23FD122D2F1CD1F /* Pods-Zoetrope_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -527,13 +543,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zoetrope_Example.app/Zoetrope_Example";
 			};
 			name = Debug;
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E81056E839EA483573AD801 /* Pods-Zoetrope_Tests.release.xcconfig */;
+			baseConfigurationReference = BC7020225801225060084D55 /* Pods-Zoetrope_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -544,6 +561,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zoetrope_Example.app/Zoetrope_Example";
 			};
 			name = Release;
