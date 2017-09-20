@@ -40,9 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		023B7FDCF69CA7378454EDEE2157562D /* Zoetrope.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Zoetrope.framework; path = Zoetrope.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		023B7FDCF69CA7378454EDEE2157562D /* Zoetrope.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Zoetrope.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		096C0F1BA4AACF2D97C89BCE65634589 /* Pods-Zoetrope_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Zoetrope_Example.release.xcconfig"; sourceTree = "<group>"; };
-		104AC646966E4E42578A8257335AED16 /* Pods-Zoetrope_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Zoetrope_Tests.modulemap"; sourceTree = "<group>"; };
+		104AC646966E4E42578A8257335AED16 /* Pods-Zoetrope_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Zoetrope_Tests.modulemap"; sourceTree = "<group>"; };
 		1FB3B0BCD2A46DF43C50B70B0B8FC7E6 /* Pods-Zoetrope_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Zoetrope_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1FD912FDF05F0400418FE3C1454D4F00 /* Pods-Zoetrope_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Zoetrope_Example-dummy.m"; sourceTree = "<group>"; };
 		20E59437BD06A4B7DFFAB789F6CA5635 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
@@ -54,11 +54,11 @@
 		4FEEC5486B637D4CEF672AAF8BCC752F /* Pods-Zoetrope_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Zoetrope_Example-umbrella.h"; sourceTree = "<group>"; };
 		67E663E7519E74AC06620D666AE18A01 /* Pods-Zoetrope_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Zoetrope_Tests-umbrella.h"; sourceTree = "<group>"; };
 		7CB1FB1392509789382BDA9456438F32 /* Pods-Zoetrope_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Zoetrope_Tests-dummy.m"; sourceTree = "<group>"; };
-		8672C90015F49521A93DF9FA8D44DCEA /* Zoetrope.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Zoetrope.modulemap; sourceTree = "<group>"; };
+		8672C90015F49521A93DF9FA8D44DCEA /* Zoetrope.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Zoetrope.modulemap; sourceTree = "<group>"; };
 		8794DB5C654C880DED8C572571328860 /* Pods-Zoetrope_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Zoetrope_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		8DA30395B17F0ADED35B39E0AAE99604 /* Pods_Zoetrope_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Zoetrope_Tests.framework; path = "Pods-Zoetrope_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DA30395B17F0ADED35B39E0AAE99604 /* Pods_Zoetrope_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zoetrope_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FCFAC9AED2EE7BAC0CFB6405EC3A58A /* Pods-Zoetrope_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Zoetrope_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		958F5D0EC789D04B857776090554222C /* Pods-Zoetrope_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Zoetrope_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A2C24B352745B9EE320B00FC0FD19FB2 /* Zoetrope-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Zoetrope-dummy.m"; sourceTree = "<group>"; };
 		AA4970A349E9B20E5066910B7851093E /* Zoetrope.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Zoetrope.xcconfig; sourceTree = "<group>"; };
@@ -72,8 +72,8 @@
 		D3FBB11C83CDA509FCD850DAEB669FE1 /* Pods-Zoetrope_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Zoetrope_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E88DF5E811894ACD6CBFBA1861F0F6A2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAFB5E921D98E076AB8792C24218B406 /* Pods-Zoetrope_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Zoetrope_Example-frameworks.sh"; sourceTree = "<group>"; };
-		EC98E488EA04DBB5AF14041F46465760 /* Pods_Zoetrope_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Zoetrope_Example.framework; path = "Pods-Zoetrope_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD91397F0B50EBE850950BD1992C70AC /* Pods-Zoetrope_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Zoetrope_Example.modulemap"; sourceTree = "<group>"; };
+		EC98E488EA04DBB5AF14041F46465760 /* Pods_Zoetrope_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zoetrope_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD91397F0B50EBE850950BD1992C70AC /* Pods-Zoetrope_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Zoetrope_Example.modulemap"; sourceTree = "<group>"; };
 		FE6C6A486079D14F68A24732C770E0A8 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
@@ -315,7 +315,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0900;
+				TargetAttributes = {
+					FB8C66441D5EAB1760277272747AE263 = {
+						LastSwiftMigration = 0900;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -506,7 +511,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -514,14 +521,20 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
@@ -568,7 +581,8 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -603,7 +617,8 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -620,7 +635,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -628,15 +645,21 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",

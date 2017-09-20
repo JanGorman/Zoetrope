@@ -7,9 +7,9 @@
 
 ## Requirements
 
-- Swift 3.1
+- Swift 4
 - iOS 8.0+
-- Xcode 8+
+- Xcode 9+
 
 ## Usage
 
@@ -35,7 +35,7 @@ func viewDidLoad() {
 
 ```
 
-Here's an animated gif of the simulator displaying an animated gif. Talk about self referential.
+Here's an animated gif of the simulator displaying an animated gif.
 
 ![image](https://www.dropbox.com/s/ixutl4ehrgszhde/zoetrope.gif?raw=1)
 
