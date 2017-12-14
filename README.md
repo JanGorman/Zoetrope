@@ -23,9 +23,9 @@ import Zoetrope
 func viewDidLoad() {
 	super.viewDidLoad()
 	
-	if let path = NSBundle.mainBundle().URLForResource("animated", withExtension: "gif"),
-           data = NSData(contentsOfURL: path) {
+	if let path = Bundle.main.url(forResource: "animated", withExtension: "gif") {
 		do {
+			let data = try Data(contentsOf: path)
 			try imageView.setData(data)
 		} catch let error {
 			print("Invalid gif \(error)")
