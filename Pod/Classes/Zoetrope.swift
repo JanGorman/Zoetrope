@@ -21,7 +21,7 @@ private struct Zoetrope {
   let loopCount: Int
   let frameCount: Int
 
-  fileprivate let framesForIndexes: [Int: Frame]
+  private let frames: [Frame]
 
   init(data: Data) throws {
     guard let imageSource = CGImageSourceCreateWithData(data as CFData, nil),
@@ -29,19 +29,21 @@ private struct Zoetrope {
             throw ZoetropeError.invalidData
     }
     loopCount = try Zoetrope.loopCount(fromImageSource: imageSource)
-    framesForIndexes = Zoetrope.frames(imageSource)
-    frameCount = framesForIndexes.count
+    frames = Zoetrope.frames(imageSource)
+    frameCount = frames.count
 
-    guard !framesForIndexes.isEmpty else { throw ZoetropeError.invalidData }
-    posterImage = framesForIndexes[0]?.image
+    guard !frames.isEmpty else { throw ZoetropeError.invalidData }
+    posterImage = frames.first?.image
   }
-
-  func image(atIndex index: Int) -> UIImage? {
-    return framesForIndexes[index]?.image
+  
+  subscript(imageAtIndex index: Int) -> UIImage? {
+    guard index >= 0 && index < frames.count else { return nil }
+    return frames[index].image
   }
-
-  func delay(atIndex index: Int) -> Double? {
-    return framesForIndexes[index]?.delay
+  
+  subscript(delayAtIndex index: Int) -> Double? {
+    guard index >= 0 && index < frames.count else { return nil }
+    return frames[index].delay
   }
 
 }
@@ -57,47 +59,44 @@ private extension Zoetrope {
     return loopCount
   }
 
-  static func frames(_ imageSource: CGImageSource) -> [Int: Frame] {
-    var frames: [Int: Frame] = [:]
+  static func frames(_ imageSource: CGImageSource) -> [Frame] {
+    var frames: [Frame] = []
     for i in 0..<CGImageSourceGetCount(imageSource) {
       if let cgImage = CGImageSourceCreateImageAtIndex(imageSource, i, nil),
          let frameProperties = CGImageSourceCopyPropertiesAtIndex(imageSource, i, nil) as? [String: Any],
          let gifFrameProperties = frameProperties[kCGImagePropertyGIFDictionary as String] as? [String: Any] {
-         let previous: Double! = i == 0 ? 0.1 : frames[i - 1]?.delay
-         let delay = Zoetrope.delayTime(fromProperties: gifFrameProperties, previousFrameDelay: previous)
-        frames[i] = Frame(delay: delay, image: UIImage(cgImage: cgImage))
+
+        let previous = i == 0 ? 0.1 : frames[i - 1].delay
+        let delay = Zoetrope.delayTime(fromProperties: gifFrameProperties, previousFrameDelay: previous)
+        frames.append(Frame(delay: delay, image: UIImage(cgImage: cgImage)))
       }
     }
     return frames
   }
 
   static func delayTime(fromProperties properties: [String: Any], previousFrameDelay: Double) -> Double {
-    var delayTime: Double! = (properties[kCGImagePropertyGIFUnclampedDelayTime as String]
-      ?? properties[kCGImagePropertyGIFDelayTime as String]) as? Double
-    if delayTime == nil {
-      delayTime = previousFrameDelay
-    }
-    if delayTime < (0.02 - .ulpOfOne) {
-      delayTime = 0.02
-    }
-    return delayTime
+    let delayTime = (properties[kCGImagePropertyGIFUnclampedDelayTime as String]
+      ?? properties[kCGImagePropertyGIFDelayTime as String]) as? Double ?? previousFrameDelay
+    return max(0.02, delayTime)
   }
 
 }
 
-/**
- * `ZoetropeImageView` is a `UIImageView` subclass for displaying animated gifs.
- *
- * Use like any other `UIImageView` and call `setData:` to pass in the `Data`
- * that represents your animated gif.
- */
+/// `ZoetropeImageView` is a `UIImageView` subclass for displaying animated gifs.
+///
+/// Use like any other `UIImageView` and call `setData:` to pass in the `Data` that represents an animated gif.
+///
 open class ZoetropeImageView: UIImageView {
 
-  fileprivate var currentFrameIndex = 0
-  fileprivate var loopCountDown = 0
-  fileprivate var accumulator = 0.0
-  fileprivate var needsDisplayWhenImageBecomesAvailable = false
-  fileprivate var currentFrame: UIImage!
+  private var currentFrameIndex = 0
+  private var loopCountDown = 0
+  private var accumulator = 0.0
+  private var needsDisplayWhenImageBecomesAvailable = false
+  private var currentFrame: UIImage!
+  
+  private var shouldAnimate: Bool {
+    return animatedImage != nil && superview != nil
+  }
 
   open override var image: UIImage? {
     get {
@@ -108,13 +107,13 @@ open class ZoetropeImageView: UIImageView {
     }
   }
 
-  fileprivate lazy var displayLink: CADisplayLink = {
+  private lazy var displayLink: CADisplayLink = {
     let displayLink = CADisplayLink(target: self, selector: #selector(displayDidRefresh))
     displayLink.add(to: .main, forMode: .commonModes)
     return displayLink
   }()
 
-  fileprivate var animatedImage: Zoetrope! {
+  private var animatedImage: Zoetrope! {
     didSet {
       image = nil
       isHighlighted = false
@@ -132,18 +131,12 @@ open class ZoetropeImageView: UIImageView {
     }
   }
 
-  /**
-   * Call setData with the `Data` representation of your gif after adding it to your view.
-   *
-   * - Parameter data:   The `Data` representation of your gif
-   * - Throws: `ZoetropeError.InvalidData` if the `data` parameter does not contain valid gif data.
-   */
+  /// Call setData with the `Data` representation of your gif after adding it to your view.
+  ///
+  /// - Parameter data: The `Data` representation of your gif
+  /// - Throws: `ZoetropeError.InvalidData` if the `data` parameter does not contain valid gif data.
   open func setData(_ data: Data) throws {
     animatedImage = try Zoetrope(data: data)
-  }
-
-  fileprivate var shouldAnimate: Bool {
-    return animatedImage != nil && superview != nil
   }
 
   open override func didMoveToWindow() {
@@ -190,9 +183,9 @@ open class ZoetropeImageView: UIImageView {
     return true
   }
 
-  @objc func displayDidRefresh(_ displayLink: CADisplayLink) {
-    guard let image = animatedImage.image(atIndex: currentFrameIndex),
-          let delayTime = animatedImage.delay(atIndex: currentFrameIndex) else { return }
+  @objc private func displayDidRefresh(_ displayLink: CADisplayLink) {
+    guard let image = animatedImage[imageAtIndex: currentFrameIndex],
+          let delayTime = animatedImage[delayAtIndex: currentFrameIndex] else { return }
 
     currentFrame = image
     if needsDisplayWhenImageBecomesAvailable {
