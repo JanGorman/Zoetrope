@@ -7,7 +7,7 @@
 
 ## Requirements
 
-- Swift 4
+- Swift 4.2
 - iOS 8.0+
 - Xcode 9+
 
