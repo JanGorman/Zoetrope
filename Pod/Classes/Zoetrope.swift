@@ -109,7 +109,7 @@ open class ZoetropeImageView: UIImageView {
 
   private lazy var displayLink: CADisplayLink = {
     let displayLink = CADisplayLink(target: self, selector: #selector(displayDidRefresh))
-    displayLink.add(to: .main, forMode: .commonModes)
+    displayLink.add(to: .main, forMode: .common)
     return displayLink
   }()
 
