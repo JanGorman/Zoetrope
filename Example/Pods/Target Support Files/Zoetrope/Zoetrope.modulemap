@@ -1,6 +1,0 @@
-framework module Zoetrope {
-  umbrella header "Zoetrope-umbrella.h"
-
-  export *
-  module * { export * }
-}

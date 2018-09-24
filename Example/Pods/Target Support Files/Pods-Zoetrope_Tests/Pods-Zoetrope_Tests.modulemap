@@ -1,6 +1,0 @@
-framework module Pods_Zoetrope_Tests {
-  umbrella header "Pods-Zoetrope_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}
