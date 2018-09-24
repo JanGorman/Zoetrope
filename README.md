@@ -21,18 +21,17 @@ To use Zoetrope in your own project:
 import Zoetrope
 
 func viewDidLoad() {
-	super.viewDidLoad()
-	
-	if let path = Bundle.main.url(forResource: "animated", withExtension: "gif") {
-		do {
-			let data = try Data(contentsOf: path)
-			try imageView.setData(data)
-		} catch let error {
-			print("Invalid gif \(error)")
-		}
+  super.viewDidLoad()
+  
+  if let path = Bundle.main.url(forResource: "animated", withExtension: "gif") {
+    do {
+      let data = try Data(contentsOf: path)
+      try imageView.setData(data)
+    } catch let error {
+      print("Invalid gif \(error)")
+    }
     }
 }
-
 ```
 
 Here's an animated gif of the simulator displaying an animated gif.
