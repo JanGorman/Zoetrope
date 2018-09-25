@@ -15,6 +15,10 @@ extension UIImageView {
     super.didMoveToWindow()
     if window == nil {
       displayLink?.invalidate()
+      displayLink = nil
+    } else if displayLink == nil {
+      displayLink = makeDisplayLink()
+      displayLink?.isPaused = false
     }
   }
   
