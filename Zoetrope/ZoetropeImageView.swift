@@ -107,7 +107,7 @@ open class ZoetropeImageView: UIImageView {
   @objc
   private func displayDidRefresh(_ displayLink: CADisplayLink) {
     guard let image = animatedImage[imageAtIndex: currentFrameIndex],
-      let delayTime = animatedImage[delayAtIndex: currentFrameIndex] else { return }
+          let delayTime = animatedImage[delayAtIndex: currentFrameIndex] else { return }
 
     currentFrame = image
     if needsDisplayWhenImageBecomesAvailable {

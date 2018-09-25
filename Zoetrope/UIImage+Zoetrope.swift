@@ -9,8 +9,9 @@ extension UIImage {
   private static var zoetropeKey: UInt8 = 0
 
   public convenience init?(gifName: String) {
-    guard let url = Bundle.main.url(forResource: gifName,
-                                    withExtension: (gifName as NSString).pathExtension),
+    let pathExtension = (gifName as NSString).pathExtension
+    let resourceName = (gifName as NSString).deletingPathExtension
+    guard let url = Bundle.main.url(forResource: resourceName, withExtension: pathExtension),
           let data = try? Data(contentsOf: url) else {
             return nil
     }

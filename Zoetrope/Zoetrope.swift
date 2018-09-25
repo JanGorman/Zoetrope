@@ -32,17 +32,23 @@ public struct Zoetrope {
     frames = Zoetrope.frames(imageSource)
     frameCount = frames.count
 
-    guard !frames.isEmpty else { throw ZoetropeError.invalidData }
+    guard !frames.isEmpty else {
+      throw ZoetropeError.invalidData
+    }
     posterImage = frames.first?.image
   }
   
   subscript(imageAtIndex index: Int) -> UIImage? {
-    guard index >= 0 && index < frames.count else { return nil }
+    guard index >= 0 && index < frames.count else {
+      return nil
+    }
     return frames[index].image
   }
   
   subscript(delayAtIndex index: Int) -> Double? {
-    guard index >= 0 && index < frames.count else { return nil }
+    guard index >= 0 && index < frames.count else {
+      return nil
+    }
     return frames[index].delay
   }
 
@@ -67,7 +73,7 @@ private extension Zoetrope {
          let gifFrameProperties = frameProperties[kCGImagePropertyGIFDictionary as String] as? [String: Any] {
 
         let previous = i == 0 ? 0.1 : frames[i - 1].delay
-        let delay = Zoetrope.delayTime(fromProperties: gifFrameProperties, previousFrameDelay: previous)
+        let delay = delayTime(fromProperties: gifFrameProperties, previousFrameDelay: previous)
         frames.append(Frame(delay: delay, image: UIImage(cgImage: cgImage)))
       }
     }

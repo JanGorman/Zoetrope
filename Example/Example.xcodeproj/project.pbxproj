@@ -12,8 +12,8 @@
 		7777C78B21590144005C1307 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7777C78921590144005C1307 /* Main.storyboard */; };
 		7777C78D21590145005C1307 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7777C78C21590145005C1307 /* Assets.xcassets */; };
 		7777C79021590145005C1307 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7777C78E21590145005C1307 /* LaunchScreen.storyboard */; };
-		7777C79E215901D8005C1307 /* Zoetrope.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7777C79C2159018B005C1307 /* Zoetrope.framework */; };
-		7777C7A021590298005C1307 /* animated.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7777C79F21590298005C1307 /* animated.gif */; };
+		F28DAAF7215AB5AD00386D57 /* animated.gif in Resources */ = {isa = PBXBuildFile; fileRef = F28DAAF6215AB5AC00386D57 /* animated.gif */; };
+		F28DAAFB215ABCDF00386D57 /* Zoetrope.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7777C79C2159018B005C1307 /* Zoetrope.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +24,35 @@
 			remoteGlobalIDString = 7777C76C215900AE005C1307;
 			remoteInfo = Zoetrope;
 		};
+		F28DAAF8215ABC9D00386D57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7777C7972159018B005C1307 /* Zoetrope.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 7777C76B215900AE005C1307;
+			remoteInfo = Zoetrope;
+		};
+		F28DAAFC215ABCDF00386D57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7777C7972159018B005C1307 /* Zoetrope.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 7777C76B215900AE005C1307;
+			remoteInfo = Zoetrope;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F28DAAFE215ABCDF00386D57 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F28DAAFB215ABCDF00386D57 /* Zoetrope.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7777C78221590143005C1307 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,7 +63,7 @@
 		7777C78F21590145005C1307 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7777C79121590145005C1307 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7777C7972159018B005C1307 /* Zoetrope.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Zoetrope.xcodeproj; path = ../Zoetrope.xcodeproj; sourceTree = "<group>"; };
-		7777C79F21590298005C1307 /* animated.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = animated.gif; path = _old/Zoetrope/Images.xcassets/animated.dataset/animated.gif; sourceTree = SOURCE_ROOT; };
+		F28DAAF6215AB5AC00386D57 /* animated.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = animated.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +71,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7777C79E215901D8005C1307 /* Zoetrope.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,8 +100,8 @@
 			children = (
 				7777C78521590144005C1307 /* AppDelegate.swift */,
 				7777C78721590144005C1307 /* ViewController.swift */,
+				F28DAAF6215AB5AC00386D57 /* animated.gif */,
 				7777C78921590144005C1307 /* Main.storyboard */,
-				7777C79F21590298005C1307 /* animated.gif */,
 				7777C78C21590145005C1307 /* Assets.xcassets */,
 				7777C78E21590145005C1307 /* LaunchScreen.storyboard */,
 				7777C79121590145005C1307 /* Info.plist */,
@@ -107,10 +134,13 @@
 				7777C77E21590143005C1307 /* Sources */,
 				7777C77F21590143005C1307 /* Frameworks */,
 				7777C78021590143005C1307 /* Resources */,
+				F28DAAFE215ABCDF00386D57 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F28DAAF9215ABC9D00386D57 /* PBXTargetDependency */,
+				F28DAAFD215ABCDF00386D57 /* PBXTargetDependency */,
 			);
 			name = Example;
 			productName = Example;
@@ -174,7 +204,7 @@
 				7777C79021590145005C1307 /* LaunchScreen.storyboard in Resources */,
 				7777C78D21590145005C1307 /* Assets.xcassets in Resources */,
 				7777C78B21590144005C1307 /* Main.storyboard in Resources */,
-				7777C7A021590298005C1307 /* animated.gif in Resources */,
+				F28DAAF7215AB5AD00386D57 /* animated.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +221,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F28DAAF9215ABC9D00386D57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Zoetrope;
+			targetProxy = F28DAAF8215ABC9D00386D57 /* PBXContainerItemProxy */;
+		};
+		F28DAAFD215ABCDF00386D57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Zoetrope;
+			targetProxy = F28DAAFC215ABCDF00386D57 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7777C78921590144005C1307 /* Main.storyboard */ = {
@@ -331,6 +374,7 @@
 		7777C79521590145005C1307 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CPRVB9W254;
@@ -349,6 +393,7 @@
 		7777C79621590145005C1307 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CPRVB9W254;
