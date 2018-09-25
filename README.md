@@ -15,7 +15,7 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-To use Zoetrope in your own project:
+To use Zoetrope in your own project you use the `UIImage` and `UIImageView` extensions exposed by the library:
 
 ```swift
 import Zoetrope
@@ -23,14 +23,13 @@ import Zoetrope
 func viewDidLoad() {
   super.viewDidLoad()
   
-  if let path = Bundle.main.url(forResource: "animated", withExtension: "gif") {
-    do {
-      let data = try Data(contentsOf: path)
-      try imageView.setData(data)
-    } catch let error {
-      print("Invalid gif \(error)")
-    }
-    }
+  // This method auto-loads the image from the main bundle. If you need more control
+  // or are downloading images over the air you can also use the Data initialiser:
+  // UIImage(gifData: myData)
+  guard let image = UIImage(gifName: "animated.gif") else {
+    return
+  }
+  imageView.displayGif(image)
 }
 ```
 

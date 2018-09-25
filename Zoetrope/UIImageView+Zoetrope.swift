@@ -29,11 +29,12 @@ extension UIImageView {
     layer.contents = image.cgImage
   }
   
-  public func setGifImage(_ image: UIImage) {
+  public func displayGif(_ image: UIImage) {
     guard let zoetrope = image.zoetrope else {
       return
     }
     self.zoetrope = zoetrope
+    currentFrame = zoetrope.posterImage
     animationProperties = AnimationProperties()
     animationProperties?.loopCountDown = zoetrope.loopCount > 0 ? zoetrope.loopCount : .max
     displayLink = makeDisplayLink()

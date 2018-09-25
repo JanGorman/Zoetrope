@@ -1,8 +1,4 @@
 //
-//  AppDelegate.swift
-//  Example
-//
-//  Created by Jan Gorman1 on 24.09.18.
 //  Copyright © 2018 Schnaub. All rights reserved.
 //
 
