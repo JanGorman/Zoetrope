@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7737BE44215A709300FFB418 /* UIImageView+Zoetrope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7737BE43215A709300FFB418 /* UIImageView+Zoetrope.swift */; };
+		7737BE48215A72C100FFB418 /* UIImage+Zoetrope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7737BE47215A72C100FFB418 /* UIImage+Zoetrope.swift */; };
 		7777C771215900AE005C1307 /* Zoetrope.h in Headers */ = {isa = PBXBuildFile; fileRef = 7777C76F215900AE005C1307 /* Zoetrope.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7777C778215900D0005C1307 /* Zoetrope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7777C777215900CF005C1307 /* Zoetrope.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7737BE43215A709300FFB418 /* UIImageView+Zoetrope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Zoetrope.swift"; sourceTree = "<group>"; };
+		7737BE47215A72C100FFB418 /* UIImage+Zoetrope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Zoetrope.swift"; sourceTree = "<group>"; };
 		7777C76C215900AE005C1307 /* Zoetrope.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Zoetrope.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7777C76F215900AE005C1307 /* Zoetrope.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Zoetrope.h; sourceTree = "<group>"; };
 		7777C770215900AE005C1307 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,6 +52,8 @@
 		7777C76E215900AE005C1307 /* Zoetrope */ = {
 			isa = PBXGroup;
 			children = (
+				7737BE43215A709300FFB418 /* UIImageView+Zoetrope.swift */,
+				7737BE47215A72C100FFB418 /* UIImage+Zoetrope.swift */,
 				7777C777215900CF005C1307 /* Zoetrope.swift */,
 				7777C76F215900AE005C1307 /* Zoetrope.h */,
 				7777C770215900AE005C1307 /* Info.plist */,
@@ -135,6 +141,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7777C778215900D0005C1307 /* Zoetrope.swift in Sources */,
+				7737BE48215A72C100FFB418 /* UIImage+Zoetrope.swift in Sources */,
+				7737BE44215A709300FFB418 /* UIImageView+Zoetrope.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

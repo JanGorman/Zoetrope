@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name             = "Zoetrope"
-  s.version          = "3.1.1"
+  s.version          = "4.0.0"
   s.summary          = "Animated gif image view with support for varying frame lengths written in Swift."
 
   s.description      = <<-DESC
-  Who doesn't love animated gifs. Zoetrope adds a UIImageView subclass that displays animated images with support for 
+  Who doesn't love animated gifs. Zoetrope adds a UIImageView extension that displays animated images with support for 
   varying frame lengths. Simple.
                        DESC
 
